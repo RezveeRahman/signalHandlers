@@ -3,7 +3,7 @@
  * @date: 11/05/2024
  * 
  * @details: This function intentionally is designed to crash. We want
- * to test some of the signals. There is alternative way to test
+ * to test some of the signals. There is an alternative way to test
  * signals, but for now we are doing a simple program.
  */
 
