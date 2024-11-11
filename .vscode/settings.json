@@ -1,0 +1,6 @@
+{
+    "[c]" : {
+        "editor.trimAutoWhitespace": true,
+        "editor.tabSize": 8,
+    }
+}
