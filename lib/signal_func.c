@@ -46,7 +46,7 @@ void handle_sigterm(int SIGNAL_TERMINATION) {
 };
 
 void handle_sigsegv(int SIGNAL_SIGSEGV) {
-        printf("We got a segmentation fault!a\n");
+        printf("We got a segmentation fault!\n");
 };
 
 void static fallback_default_action() {

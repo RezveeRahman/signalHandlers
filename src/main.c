@@ -10,10 +10,10 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <signal.h>
-#include "../lib/signal_func.c"
+#include "../lib/signal_func.h"
 
 int main(void) {
-        signal(SIGSEGV, handle_sigsegv);
+        signal(SIGSEGV, generic_signal_handler);
         /* We wil allocate space for an int array */
         int test_arr[8];
         
@@ -22,10 +22,10 @@ int main(void) {
         printf("(e.g. SIGSEGV - segmentation fault");
         printf(" & SIGINT - signal interrupt).\n");
         printf("Press Enter to continue: ");
-        scanf("%*s", NULL);
         printf("\n");
 
-        test_arr[9] = 9;
+        test_arr[-1] = 9;
+        // raise(SIGINT);
 
         return (EXIT_SUCCESS);
 }
